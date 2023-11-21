@@ -1,5 +1,15 @@
 #include "sort.h"
 
+/**
+ * partition - partitioning using lomuto scheme
+ *
+ * @array: list of integers
+ * @size: size of array
+ * @low: first element
+ * @high: last element
+ *
+ * Return: index of pivot
+ */
 int partition(int *array, size_t size, int low, int high)
 {
 	int pivot, i, j, tmp;
@@ -30,6 +40,14 @@ int partition(int *array, size_t size, int low, int high)
 	return (i);
 }
 
+/**
+ * q_sort - sorts using quick_sort
+ *
+ * @array: list of integers
+ * @size: size of array
+ * @low: first element
+ * @high: last element
+ */
 void q_sort(int *array, size_t size, int low, int high)
 {
 	int part;
