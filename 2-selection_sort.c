@@ -22,7 +22,7 @@ void selection_sort(int *array, size_t size)
 			if (array[j] < array[min_index])
 				min_index = j;
 		}
-		
+
 		if (min_index != i)
 		{
 			temp = array[i];
